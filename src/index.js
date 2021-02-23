@@ -1,6 +1,19 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import App from './App';
+
+import Routes from 'routes';
+import { BrowserRouter as Router } from 'react-router-dom';
+import TopBar from "components/TobBar";
+const App = () => {
+  return (
+    <>
+      <Router>
+        <TopBar />
+        <Routes />
+      </Router>
+    </>
+  );
+}
 
 ReactDOM.render(
   <React.StrictMode>
